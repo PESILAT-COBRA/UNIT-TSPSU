@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Database Unit Pesantren Tapak Suci Sumut</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <img class="logo" src="logo.png" alt="Logo Tapak Suci">
+    <div>
+      <h1>Unit Pesantren Tapak Suci</h1>
+      <p>Sumatera Utara &middot; Database Organisasi</p>
+    </div>
+  </div>
+  <nav id="nav">
+    <a href="#beranda" data-v="beranda">Beranda</a>
+    <a href="#pengurus" data-v="pengurus">Struktur Pengurus</a>
+    <a href="#cabang" data-v="cabang">Cabang</a>
+    <a href="#anggota" data-v="anggota">Kader &amp; Siswa</a>
+  </nav>
+  <div class="top-actions">
+    <button id="btnPublish" class="btn gold hidden"></button>
+    <button id="btnAdmin" class="btn ghost">Admin</button>
+  </div>
+</header>
+
+<main>
+  <section id="v-beranda" class="view"></section>
+  <section id="v-pengurus" class="view"></section>
+  <section id="v-cabang" class="view"></section>
+  <section id="v-anggota" class="view"></section>
+</main>
+
+<footer>Unit Pesantren Tapak Suci Putera Muhammadiyah Sumatera Utara &middot; Data diperbarui: <span id="lastUpdate">-</span></footer>
+
+<dialog id="dlg"></dialog>
+<div id="toast" class="toast hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>
